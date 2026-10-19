@@ -1,0 +1,6 @@
+`timescale 1ns/1ps
+// cin is carry/no-borrow input: x = a - b - (1-cin).
+module alu_sub(input wire [3:0] a, b, input wire cin,
+  output wire [3:0] x, output wire cout);
+  assign {cout, x} = {1'b0,a} + {1'b0,~b} + {4'b0,cin};
+endmodule

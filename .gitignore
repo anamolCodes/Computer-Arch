@@ -1,0 +1,6 @@
+build/
+latex/*.aux
+latex/*.log
+latex/*.out
+latex/*.toc
+__pycache__/
